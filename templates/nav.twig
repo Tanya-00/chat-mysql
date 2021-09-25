@@ -1,0 +1,13 @@
+{% extends "index.twig" %}
+{% block title %}Chat{% endblock %}
+{% block message %}
+    <h1>Messages</h1>
+
+    <ul style = "list-style: none">
+        {% for message in messages %}
+            <li>
+                <span><strong>{{message.LOGIN}}:</strong>{{message.MESSAGE}}<strong>{{message.DATE}}</strong></span>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}

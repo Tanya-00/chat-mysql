@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" message="text/html; charset="UTF-8"/>
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+
+{% include "nav.twig" %}
+<div id="message">
+    {% block message %}
+    {% endblock %}
+</div>
+</body>
+</html>
